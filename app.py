@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 
 # Load data
-df = pd.read_csv("D:\Car price prediction\CarPrice_Assignment.csv")
+df = pd.read_csv("CarPrice_Assignment.csv")
 
 # Preprocess data
 df["CarName"] = df["CarName"].apply(lambda x: str(x).split(" ")[0].lower())
